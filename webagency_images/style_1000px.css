@@ -1,0 +1,27 @@
+@media all and (max-width:1000px)
+{
+  #header{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .menu{
+    margin:1% 1% 1% 1%;
+  }
+  #slider{
+    margin-top: 30%;
+  }
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+  #formulaire{
+    border:none;
+  }
+  #projet{
+    margin-left: 30%;
+  }
+  #image{
+    margin-left: 10%;
+  }
+}
