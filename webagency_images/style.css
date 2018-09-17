@@ -61,33 +61,39 @@
   font-family:'roboto-thinitalic';
   src:url('fonts/Roboto-ThinItalic.ttf');
 }
+*{
+  font-family:roboto-regular,arial,comic;
+}
+
 #header {
   display:flex;
   position: fixed;
   top:0;
   width:100%;
   background-color:white;
+  justify-content: space-around;
 }
-#Menu{
+#menu{
   text-align: center;
   margin: 5% 0% 3% 3%;
   display: flex;
 }
-
+ul{
+  list-style: none;
+  display:inline-block;
+}
 div > a{
   text-decoration: none;
   color:#333;
 }
 div.logo{
-  margin-left:8%;
-  margin-right:2%;
-  margin-top:3%;
-  width: 50%
+  display:flex;
+  align-items: center;
 }
-.Menu{
-  margin:5% 5% 5% 5%;
+#menu > li{
+  padding:5% 5% 5% 5%;
 }
-.Menu:hover{
+#menu > li:hover{
     border-top:3px solid #499CE2;
 }
 
@@ -109,7 +115,8 @@ h1{
 }
 strong{
   font-family:roboto-black,arial,comic;
-  color:#FFE0E0;
+  text-transform: uppercase;
+  color:#499CE2;
 }
 
 #slider p {
