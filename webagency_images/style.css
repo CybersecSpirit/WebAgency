@@ -75,12 +75,17 @@
 }
 #menu{
   text-align: center;
-  margin: 5% 0% 3% 3%;
-  display: flex;
+  display: inline-block;
 }
 ul{
+  width: 450px;
   list-style: none;
   display:inline-block;
+  justify-content: space-around;
+}
+li > a{
+  text-decoration: none;
+  color:#333;
 }
 div > a{
   text-decoration: none;
@@ -89,29 +94,38 @@ div > a{
 div.logo{
   display:flex;
   align-items: center;
+  margin-top: 2%;
+  padding-bottom: 2%;
 }
-#menu > li{
-  padding:5% 5% 5% 5%;
+#menu li{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  display: inline-block;
 }
-#menu > li:hover{
+#menu a {
+  text-decoration: none;
+  padding-top: 20px;
+}
+#menu a:hover{
     border-top:3px solid #499CE2;
 }
 
 #slider{
-  margin-top:11%;
-  margin-right:5%;
-  margin-left:5%;
+  margin-top:10%;
+  padding-top:5%;
   background-image:url('images/slider/bg1.jpg');
   background-size: cover;
-  width:90%;
-  height: 300px;
+  width:100%;
+  height: 400px;
 
 }
 
 h1{
-  font-family: Roboto-thin, arial, comic;
-  color:#FFE9E9;
+  font-family: Roboto-black, arial, comic;
+  color:white;
   font-size:1.8em;
+  text-transform: uppercase;
 }
 strong{
   font-family:roboto-black,arial,comic;
@@ -121,8 +135,9 @@ strong{
 
 #slider p {
   font-family:robot-regular, arial, comic;
-  font-size:0.7em;
+  font-size:0.8em;
   color:white;
+  padding-bottom:3%;
 }
 
 .presentation{
@@ -136,7 +151,7 @@ strong{
   height:8%;
   border-radius: 3px;
 }
-.button > p > a {
+.button > p > a{
   text-decoration: none;
   color:#FFE0E0;
   padding-left:10%;
@@ -153,15 +168,17 @@ strong{
   margin-left:5%;
   margin-right:5%;
 }
-h2[target="_top"]{
+section header h2{
   text-align: center;
-  font-family:roboto-BlackItalic,arial,comic;
+  font-family:roboto-medium,arial,comic;
   font-size:1.8em;
-  color: #499CE2;
+  color: black;
+  text-transform: uppercase;
 }
-p[target=_description]{
+
+section header p{
   text-align:center;
-  color:#3C82BD;
+  color:#black;
   font-size:0.8em;
   font-family:roboto-light,arial,comic;
 }
@@ -172,44 +189,76 @@ p[target=_description]{
 }
 .services{
   display:flex;
-  margin-left: 10%;
+  margin-left: 3%;
+  width:40%;
+}
+#features{
+  display:flex;
 }
 ul > li > h3 {
-  color:#3C82BD;
-  font-size:1.2em;
-}
-ul > li > p {
-  color:#499CE2;
+  color:black;
+  font-family: roboto-medium, comic, arial;
   font-size:1em;
 }
+ul > li > p {
+  color:black;
+  font-family: roboto-light, comic, arial;
+  font-size:0.8em;
+}
 #formulaire{
-  margin-left: 40%;
-  margin-right: 30%;
-  border:3px solid #FFE9E9;
-  border-radius:10px;
+  margin-left: 60%;
+  margin-right: 10%;
   font-family: roboto-thinitalic,arial,comic;
   color:#FFE9E9;
+  background-color:rgba(255,255,255,0.5);
 }
-input[target='_bouton']{
+input[type=submit]{
   background-color: #499CE2;
   border-radius: 5px;
-  margin-left: 40%;
-
+  margin-left: 4%;
+  font-family: roboto-medium, arial,comic;
+  color:white;
+  border-bottom: 3px solid #0C6AB9;
+}
+#contact .button{
+  border-bottom: 3px solid #0C6AB9;
+  margin-left: 5%;
+  align-items: center;
+}
+#contact .button:hover{
+  background-color:#499CE2;
+  border-bottom:none;
+}
+#contact .button > p {
+  padding-top: 5%;
+}
+#contact .button > p > a{
+  text-decoration: none;
+  color:#FFE0E0;
+  padding-left:5%;
+  padding-right:2%;
+}
+input[type=text],input[type=email]{
+  width:90%;
+  margin-left: 4%;
+  border-radius: 5px;
+}
+textarea{
+  border-radius: 5px;
+  width:90%;
+  margin-left:4%;
 }
 #contact{
   padding-top: 5%;
-  margin-right:5%;
-  margin-left:5%;
   background-image: url('images/animated-number/bg.jpg');
   background-size:cover;
+  opacity:0.8;
   height: 400px;
   padding-bottom:50px;
 }
 #portfolio{
   background-color:#E6E6E6;
   padding-top:5%;
-  margin-right:5%;
-  margin-left:5%;
   padding-bottom:5%;
 }
 #projet{
@@ -267,7 +316,6 @@ input[target='_bouton']{
   padding-left:5%;
   padding-right:5%;
 }
-
 #image{
   margin-top:5%;
   margin-left:10%;

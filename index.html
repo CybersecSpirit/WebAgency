@@ -13,7 +13,7 @@
       <div class='logo'><img src='webagency_images/images/logo.png'/></div>
         <nav id='menu'>
           <ul>
-          <li class='menu'><a href='#Accueil'>Accueil</a></li>
+          <li class='menu'><a href='#header'>Accueil</a></li>
           <li class='menu'><a href='#services'>Services</a></li>
           <li class='menu'><a href='#portfolio'>Portfolio</a></li>
           <li class='menu'><a href='#contact'>Contact</a></li>
@@ -22,8 +22,8 @@
   </header>
   <section id='slider'>
       <div class='presentation'>
-        <h1><strong>WebAgency</strong> : l'agence de tous vos projets!</h1>
-        <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser.</p>
+        <h1><strong>WebAgency:</strong> l'agence de tous vos projets!</h1>
+        <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser ! </p>
         <div class="button">
           <p>
             <a href='http://8.8.8.8'>Plus d'Infos</a>
@@ -32,27 +32,31 @@
       </div>
   </section>
   <section id='services'>
-    <h2 target='_top'>Nos Services</h2>
-      <div class='bar'></div>
-    <p target='_description'> La Web Agency propose plusieurs services.</p>
-
+    <header>
+    <h2>Nos Services</h2>
+  </hr>
+    <p> La Web Agency propose plusieurs services.</p>
+  </header>
+  <div id="features">
     <div class="services">
       <img src="webagency_images/images/main-feature.png"/>
     </div>
     <div class="services">
-      <ul target='_services'>
+      <ul>
         <li><h3>UX Design</h3><p>Mise en place de l'expérience utilisateur</p></li>
         <li><h3>UI Design</h3><p>Conception de l'interface client</p></li>
         <li><h3>SEO</h3><p>Référencement afin de rendre votre site visible sur le Web</p></li>
       </ul>
     </div>
-
+  </div>
 
   </section>
   <section id='portfolio'>
-    <h2 target="_top">Nos Projets</h2>
+    <header>
+    <h2>Nos Projets</h2>
       <div class='bar'></div>
-    <p target='_description'>Fort de son expérience, la Web Agency rendra toujours votre site plus beau.</p>
+    <p>Fort de son expérience, la Web Agency rendra toujours votre site plus beau.</p>
+  </header>
     <div id="projet">
       <div class='menu_projet1'><a href='#'><p>Intégralité<p></a></div>
       <div class='menu_projet2'><a href='#'><p>Creative<p></a></div>
@@ -73,22 +77,18 @@
 
   </section>
   <section id="contact">
-    <h2 target="_top">Nous contacter</h2>
-      <div class='bar'></div>
-    <p target='_description'>Ce formulaire permet de nous contacter.</p>
     <div id="formulaire">
     <form>
-      <fieldset>
-        <legend>Vos Coordonées</legend>
-      <div class='formulaire'><label for='pseudo'>Votre pseudo</label> :  <input type="text" name='pseudo' id='pseudo'></div>
-      <div class='formulaire'><label for='email'>Votre email</label> :  <input type="email" name='email' id='email'></div>
-    </fieldset>
-    <fieldset>
-      <legend>Votre Message </legend>
-      <div class='formulaire'><label for='sujet'> Sujet</label> :  <input type="text" name='sujet' id='sujet'></div>
-      <div class='formulaire'><label for='message'>Votre message</label> :  <textarea name='message' id='message'></textarea></div>
-    </fieldset>
-      <div class='formulaire'><input type='submit' value='Envoyez' target='_bouton'></div>
+      <div class='formulaire'><input type="text" value="Votre Nom" name='pseudo' id='pseudo'></div>
+      <div class='formulaire'><input type="email" value="Votre Email" name='email' id='email'></div>
+      <div class='formulaire'><input type="text" value="Sujet :" name='sujet' id='sujet'></div>
+      <div class='formulaire'><textarea name='message' value="Votre Message" id='message' rows="10"></textarea></div>
+      <div class='formulaire'><input type='submit' value='Envoyer' id='envoyer' ></div>
+      <div class="button">
+        <p>
+          <a href='http://8.8.8.8'>Envoyer</a>
+        </p>
+      </div>
     </form>
     </div>
 
