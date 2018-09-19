@@ -223,7 +223,9 @@ input[type=submit]{
 }
 #contact .button{
   border-bottom: 3px solid #0C6AB9;
-  margin-left: 5%;
+  margin-left: 3%;
+  margin-top: 3%;
+  padding-left: 3%;
   align-items: center;
 }
 #contact .button:hover{
@@ -238,14 +240,19 @@ input[type=submit]{
   color:#FFE0E0;
   padding-left:5%;
   padding-right:2%;
+
 }
 input[type=text],input[type=email]{
   width:90%;
   margin-left: 4%;
   border-radius: 5px;
+  border:1px solid grey;
+  color:grey;
+  height: 20px;
 }
 textarea{
   border-radius: 5px;
+  border:1px solid grey;
   width:90%;
   margin-left:4%;
 }
@@ -338,15 +345,25 @@ textarea{
 .img_descrip{
   visibility: hidden;
   position:absolute;
-  margin-top:34%;
+  margin-top:30%;
   background-color: black;
   opacity: 0.5;
   width:100%;
-  height: 50%;
-  z-index: 100;
 }
-.img_descrip:hover{
-  visibility: visible;
+.image:hover > .img_descrip {
+    visibility: visible;
+}
+.img_descrip > h5 {
+  font-size: 0.9em;
+  color: white;
+  opacity:1;
+  margin-left: 5%;
+}
+.img_descrip > p {
+  color: white;
+  font-size: 0.8em;
+  opacity: 1;
+  margin-left: 5%;
 }
 
 #image > div > img {
