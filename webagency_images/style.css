@@ -209,9 +209,33 @@ ul > li > p {
 #formulaire{
   margin-left: 60%;
   margin-right: 10%;
+  margin-top: -5%;
+  padding-bottom: 30px;
   font-family: roboto-thinitalic,arial,comic;
   color:#FFE9E9;
-  background-color:rgba(255,255,255,0.5);
+  background-color:rgba(255,255,255,0.8);
+}
+h6{
+  padding-top: 4%;
+  margin-left: 4%;
+  font-size: 1.5em;
+  color:black;
+  opacity:1;
+  font-family: roboto-black;
+}
+#formulaire p strong {
+  text-transform: capitalize;
+  font-family: roboto-medium;
+  color:#6F6F6F;
+  opacity: 1;
+  font-size: 1.2em;
+}
+#formulaire p{
+  margin-left: 4%;
+  margin-top: -12%;
+  color:#979797;
+  opacity: 1;
+  font-size: 0.8em;
 }
 input[type=submit]{
   background-color: #499CE2;
@@ -223,14 +247,16 @@ input[type=submit]{
 }
 #contact .button{
   border-bottom: 3px solid #0C6AB9;
-  margin-left: 3%;
+  margin-left: 4%;
   margin-top: 3%;
   padding-left: 3%;
   align-items: center;
+  height: 30px;
 }
 #contact .button:hover{
   background-color:#499CE2;
-  border-bottom:none;
+  border-bottom:3px solid #499CE2;
+  height:30px;
 }
 #contact .button > p {
   padding-top: 5%;
@@ -251,6 +277,7 @@ input[type=text],input[type=email]{
   height: 20px;
 }
 textarea{
+  color:grey;
   border-radius: 5px;
   border:1px solid grey;
   width:90%;
@@ -273,6 +300,7 @@ textarea{
   margin-left:40%;
   margin-right:40%;
   display:flex;
+  height: 50px;
 }
 .menu_projet1{
   font-family: roboto-regular, arial, comic;
@@ -325,8 +353,7 @@ textarea{
   padding-right:5%;
 }
 #image{
-  margin-top:5%;
-  margin-left:5%;
+  margin-left:7%;
   margin-right:5%;
   width:100%;
   display:flex;
@@ -345,7 +372,7 @@ textarea{
 .img_descrip{
   visibility: hidden;
   position:absolute;
-  margin-top:30%;
+  margin-top:44%;
   background-color: black;
   opacity: 0.5;
   width:100%;
@@ -354,12 +381,14 @@ textarea{
     visibility: visible;
 }
 .img_descrip > h5 {
+  font-family: roboto-black;
+  margin-top: 10px;
   font-size: 0.9em;
   color: white;
-  opacity:1;
   margin-left: 5%;
 }
 .img_descrip > p {
+  margin-top: -8%;
   color: white;
   font-size: 0.8em;
   opacity: 1;
