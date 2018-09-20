@@ -140,11 +140,48 @@ strong{
   color:white;
   padding-bottom:3%;
 }
+#fleches .fleche-gauche{
+  margin-top:11.5%;
+  position:absolute;
+  background-color:(255,255,255,0.9);
+  width: 30px;
+  height:60px;
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
+  border: 1px solid black;
+  border-left: none;
+}
+#fleches .fleche-droite{
+  margin-left:96.3%;
+  margin-top:11.5%;
+  z-index: 100;
+  position:absolute;
+  width: 30px;
+  height:60px;
+  border-bottom-left-radius: 200px;
+  border-top-left-radius: 200px;
+  border: 1px solid black;
+  border-right:none;
+}
+#fleches p {
+  color:white;
+  font-size:1.8em;
+  font-family: roboto-thin;
+}
+#fleches .fleche-gauche p{
+  padding-left: 5px;
+  margin-top:10px;
+}
+#fleches .fleche-droite p{
+  padding-left:10px;
+  margin-top :10px;
+}
 
 .presentation{
   margin-right:50%;
   margin-left:5%;
   padding-top: 5%;
+  position: relative;
 }
 .button {
   background-color: #499CE2;
