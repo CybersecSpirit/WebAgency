@@ -65,6 +65,10 @@
   font-family:roboto-regular,arial,comic;
 }
 
+
+/* HEADER */
+
+
 #header {
   z-index: 200;
   display:flex;
@@ -112,6 +116,50 @@ div.logo{
     border-top:3px solid #499CE2;
 }
 
+
+/* HEADER SECTION */
+
+section header h2{
+  text-align: center;
+  font-family:roboto-medium,arial,comic;
+  font-size:1.8em;
+  color: black;
+  text-transform: uppercase;
+}
+
+section header p{
+  text-align:center;
+  color:#black;
+  font-size:0.8em;
+  font-family:roboto-light,arial,comic;
+}
+.bar {
+  position: relative;
+  margin-top: 10px;
+  border-top: 2px solid grey;
+  margin-right:40%;
+  margin-left:40%;
+}
+.bar::before{
+  position: absolute;
+  content:'\f111';
+  font-family:fontawesome;
+  color: #499CE2;
+  font-size: 1em;
+  border:1px solid white;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: white;
+  border-radius: 100%;
+  margin-left: 47%;
+  margin-top: -11px;
+}
+
+
+/* SLIDER */
+
+
+
 #slider{
   margin-top:10%;
   padding-top:5%;
@@ -140,6 +188,10 @@ strong{
   color:white;
   padding-bottom:3%;
 }
+
+/* Fleches Slider */
+
+
 #fleches .fleche {
   margin-top:11.5%;
   position:absolute;
@@ -176,6 +228,8 @@ strong{
   margin-top :10px;
 }
 
+/* Texte Slider */
+
 .presentation{
   margin-right:50%;
   margin-left:5%;
@@ -200,46 +254,16 @@ strong{
 .button > p {
   padding-top: 10%;
 }
+
+/* SERVICES */
+
+
 #services{
   margin-top:5%;
   margin-left:5%;
   margin-right:5%;
 }
-section header h2{
-  text-align: center;
-  font-family:roboto-medium,arial,comic;
-  font-size:1.8em;
-  color: black;
-  text-transform: uppercase;
-}
 
-section header p{
-  text-align:center;
-  color:#black;
-  font-size:0.8em;
-  font-family:roboto-light,arial,comic;
-}
-.bar {
-  position: relative;
-  margin-top: 10px;
-  border-top: 2px solid grey;
-  margin-right:40%;
-  margin-left:40%;
-}
-.bar::before{
-  position: absolute;
-  content:'\f111';
-  font-family:fontawesome;
-  color: #499CE2;
-  font-size: 1em;
-  border:1px solid white;
-  padding-left: 2px;
-  padding-right: 2px;
-  background-color: white;
-  border-radius: 100%;
-  margin-left: 47%;
-  margin-top: -11px;
-}
 .services{
   display:flex;
   margin-left: 3%;
@@ -247,6 +271,10 @@ section header p{
 }
 .services ul li {
   height: 100px;
+}
+.services img {
+  width: 100%;
+  height: 100%;
 }
 #features{
   display:flex;
@@ -261,97 +289,69 @@ ul > li > p {
   font-family: roboto-light, comic, arial;
   font-size:0.8em;
 }
-#formulaire{
-  position: absolute;
-  margin-left: 60%;
-  margin-right: 10%;
-  margin-top: -50%;
-  width: 30%;
-  padding-bottom: 30px;
-  font-family: roboto-thinitalic,arial,comic;
-  color:#FFE9E9;
-  background-color:rgba(255,255,255,0.8);
-}
-h6{
-  margin-top: 4%;
-  margin-left: 4%;
-  font-size: 1.5em;
-  color:black;
-  opacity:1;
-  font-family: roboto-black;
-}
-#formulaire p strong {
-  text-transform: capitalize;
-  font-family: roboto-medium;
-  color:#6F6F6F;
-  opacity: 1;
-  font-size: 1.2em;
-}
-#formulaire p{
-  margin-left: 4%;
-  margin-top: -12%;
-  color:#979797;
-  opacity: 1;
-  font-size: 0.8em;
-}
-#contact .button{
-  border-bottom: 3px solid #0C6AB9;
-  margin-left: 4%;
-  margin-top: 3%;
-  padding-left: 3%;
-  align-items: center;
-  height: 30px;
-}
-#contact .button:hover{
-  background-color:#499CE2;
-  border-bottom:3px solid #499CE2;
-  height:30px;
-}
-#contact .button > p {
-  padding-top: 5%;
-}
-#contact .button > p > a{
-  text-decoration: none;
-  color:#FFE0E0;
-  padding-left:5%;
-  padding-right:2%;
 
-}
-input[type=text],input[type=email]{
-  width:90%;
-  margin-left: 4%;
-  border-radius: 5px;
-  border:1px solid grey;
-  color:grey;
-  height: 30px;
-}
-textarea{
-  color:grey;
-  border-radius: 5px;
-  border:1px solid grey;
-  width:90%;
-  margin-left:4%;
-}
-#contact{
-  padding-top: 5%;
-  opacity:0.8;
-  height: 400px;
-  padding-bottom:50px;
-}
-.formulaire{
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-iframe{
+/* Icones Services*/
+
+
+.icon_services{
   position: relative;
-  height: 800px;
-  width: 100%;
+  margin-right: 5%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid grey;
+  display: inline-block;
+  float: left;
+  font-family: fontawesome;
 }
+.icon_ux::after{
+  position: absolute;
+  content:"\f201";
+  font-size:2em;
+  color:#499CE2;
+  margin-left:25px;
+  margin-top:20px;
+}
+.icon_ui::after{
+  position: absolute;
+  content:"\f1b3";
+  font-size:2em;
+  color:#499CE2;
+  margin-left:22px;
+  margin-top:20px;
+}
+.icon_seo::after{
+  position: absolute;
+  content:"\f200";
+  font-size:2em;
+  color:#499CE2;
+  margin-left:27px;
+  margin-top:22px;
+}
+.icon_services::before{
+  content:'\f111';
+  font-size: 1em;
+  color: #499CE2;
+  border: 1px solid white;
+  background-color: white;
+  position:absolute;
+  margin-left: 72px;
+  margin-top: 30px;
+}
+
+
+/* PORTFOLIO */
+
+
 #portfolio{
   background-color:#E6E6E6;
   padding-top:5%;
   padding-bottom:5%;
 }
+
+/* Menu Portfolio */
+
+
 #projet{
   margin-top: 60px;
   margin-bottom: 50px;
@@ -451,12 +451,20 @@ iframe{
   padding-left:5%;
   padding-right:5%;
 }
+
+/* Images Portfolio */
+
+
 #image{
   margin-left:7%;
   margin-right:5%;
   width:100%;
   display:flex;
   flex-wrap: wrap;
+}
+#image > div > img {
+  width: 100%;
+  height: 100%;
 }
 .image{
   position: relative;
@@ -468,10 +476,14 @@ iframe{
   width: 20%;
   height:20%;
 }
+
+/* Description Images */
+
+
 .img_descrip{
   visibility: hidden;
   position:absolute;
-  margin-top:44%;
+  margin-top:46%;
   background-color: black;
   opacity: 0.8;
   width:100%;
@@ -508,53 +520,108 @@ iframe{
   margin-left: 5%;
 }
 
-#image > div > img {
-  width: 100%;
-  height: 100%;
+
+
+
+
+/* FORMULAIRE DE CONTACT */
+
+
+/* Fond */
+
+#contact{
+  padding-top: 5%;
+  opacity:0.8;
+  height: 400px;
+  padding-bottom:50px;
 }
 
-.icon_services{
+iframe{
   position: relative;
-  margin-right: 5%;
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  border: 1px solid grey;
-  display: inline-block;
-  float: left;
-  font-family: fontawesome;
+  height: 800px;
+  width: 100%;
 }
-.icon_ux::after{
+
+/* En-tête */
+
+h6{
+  margin-top: 4%;
+  margin-left: 4%;
+  font-size: 1.5em;
+  color:black;
+  opacity:1;
+  font-family: roboto-black;
+}
+#formulaire p strong {
+  text-transform: capitalize;
+  font-family: roboto-medium;
+  color:#6F6F6F;
+  opacity: 1;
+  font-size: 1.2em;
+}
+#formulaire p{
+  margin-left: 4%;
+  margin-top: -12%;
+  color:#979797;
+  opacity: 1;
+  font-size: 0.8em;
+}
+
+/* Corps */
+
+#formulaire{
   position: absolute;
-  content:"\f201";
-  font-size:2em;
-  color:#499CE2;
-  margin-left:25px;
-  margin-top:20px;
+  margin-left: 60%;
+  margin-right: 10%;
+  margin-top: -50%;
+  width: 30%;
+  padding-bottom: 30px;
+  font-family: roboto-thinitalic,arial,comic;
+  color:#FFE9E9;
+  background-color:rgba(255,255,255,0.8);
 }
-.icon_ui::after{
-  position: absolute;
-  content:"\f1b3";
-  font-size:2em;
-  color:#499CE2;
-  margin-left:22px;
-  margin-top:20px;
+
+input[type=text],input[type=email]{
+  width:90%;
+  margin-left: 4%;
+  border-radius: 5px;
+  border:1px solid grey;
+  color:grey;
+  height: 30px;
 }
-.icon_seo::after{
-  position: absolute;
-  content:"\f200";
-  font-size:2em;
-  color:#499CE2;
-  margin-left:27px;
-  margin-top:22px;
+textarea{
+  color:grey;
+  border-radius: 5px;
+  border:1px solid grey;
+  width:90%;
+  margin-left:4%;
 }
-.icon_services::before{
-  content:'\f111';
-  font-size: 1em;
-  color: #499CE2;
-  border: 1px solid white;
-  background-color: white;
-  position:absolute;
-  margin-left: 72px;
-  margin-top: 30px;
+.formulaire{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Bouton Envoyer */
+#contact .button{
+  border-bottom: 3px solid #0C6AB9;
+  margin-left: 4%;
+  margin-top: 3%;
+  padding-left: 3%;
+  align-items: center;
+  height: 30px;
+}
+#contact .button:hover{
+  background-color:#499CE2;
+  border-bottom:3px solid #499CE2;
+  height:30px;
+}
+#contact .button > p {
+  padding-top: 5%;
+}
+#contact .button > p > a{
+  text-decoration: none;
+  color:#FFE0E0;
+  padding-left:5%;
+  padding-right:2%;
+
 }
