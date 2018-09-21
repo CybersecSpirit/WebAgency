@@ -11,7 +11,7 @@
   src:url('fonts/glyphicons-halflings-regular.eot') format('eot'),
       url('fonts/glyphicons-halflings-regular.svg') format('svg'),
       url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-      url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+      url('fonts/glyphicons-halflings-regular.woff') format('woff')
 }
 @font-face{
   font-family:'roboto-black';
@@ -129,7 +129,7 @@ section header h2{
 
 section header p{
   text-align:center;
-  color:#black;
+  color:black;
   font-size:0.8em;
   font-family:roboto-light,arial,comic;
 }
