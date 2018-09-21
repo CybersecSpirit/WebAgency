@@ -140,30 +140,29 @@ strong{
   color:white;
   padding-bottom:3%;
 }
-#fleches .fleche-gauche{
+#fleches .fleche {
   margin-top:11.5%;
   position:absolute;
-  background-color:(255,255,255,0.9);
+  z-index:100;
+  background-color:rgba(0,0,0,0.5);
   width: 30px;
   height:60px;
-  border-bottom-right-radius: 200px;
-  border-top-right-radius: 200px;
   border: 1px solid black;
   border-left: none;
 }
+#fleches .fleche-gauche{
+
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
+
+}
 #fleches .fleche-droite{
   margin-left:96.3%;
-  margin-top:11.5%;
-  z-index: 100;
-  position:absolute;
-  width: 30px;
-  height:60px;
   border-bottom-left-radius: 200px;
   border-top-left-radius: 200px;
-  border: 1px solid black;
-  border-right:none;
 }
 #fleches p {
+  font-family: roboto-regular;
   color:white;
   font-size:1.8em;
   font-family: roboto-thin;
@@ -221,19 +220,38 @@ section header p{
   font-family:roboto-light,arial,comic;
 }
 .bar {
-  border-top: 2px double #FFE9E9;
+  position: relative;
+  margin-top: 10px;
+  border-top: 2px solid grey;
   margin-right:40%;
   margin-left:40%;
+}
+.bar::before{
+  position: absolute;
+  content:'\f111';
+  font-family:fontawesome;
+  color: #499CE2;
+  font-size: 1em;
+  border:1px solid white;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: white;
+  border-radius: 100%;
+  margin-left: 47%;
+  margin-top: -11px;
 }
 .services{
   display:flex;
   margin-left: 3%;
-  width:40%;
+  width:50%;
+}
+.services ul li {
+  height: 100px;
 }
 #features{
   display:flex;
 }
-ul > li > h3 {
+.services ul > li > h3 {
   color:black;
   font-family: roboto-medium, comic, arial;
   font-size:1em;
@@ -244,16 +262,18 @@ ul > li > p {
   font-size:0.8em;
 }
 #formulaire{
+  position: absolute;
   margin-left: 60%;
   margin-right: 10%;
-  margin-top: -5%;
+  margin-top: -50%;
+  width: 30%;
   padding-bottom: 30px;
   font-family: roboto-thinitalic,arial,comic;
   color:#FFE9E9;
   background-color:rgba(255,255,255,0.8);
 }
 h6{
-  padding-top: 4%;
+  margin-top: 4%;
   margin-left: 4%;
   font-size: 1.5em;
   color:black;
@@ -273,14 +293,6 @@ h6{
   color:#979797;
   opacity: 1;
   font-size: 0.8em;
-}
-input[type=submit]{
-  background-color: #499CE2;
-  border-radius: 5px;
-  margin-left: 4%;
-  font-family: roboto-medium, arial,comic;
-  color:white;
-  border-bottom: 3px solid #0C6AB9;
 }
 #contact .button{
   border-bottom: 3px solid #0C6AB9;
@@ -311,7 +323,7 @@ input[type=text],input[type=email]{
   border-radius: 5px;
   border:1px solid grey;
   color:grey;
-  height: 20px;
+  height: 30px;
 }
 textarea{
   color:grey;
@@ -322,11 +334,18 @@ textarea{
 }
 #contact{
   padding-top: 5%;
-  background-image: url('images/animated-number/bg.jpg');
-  background-size:cover;
   opacity:0.8;
   height: 400px;
   padding-bottom:50px;
+}
+.formulaire{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+iframe{
+  position: relative;
+  height: 800px;
+  width: 100%;
 }
 #portfolio{
   background-color:#E6E6E6;
@@ -334,12 +353,15 @@ textarea{
   padding-bottom:5%;
 }
 #projet{
-  margin-left:40%;
-  margin-right:40%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-left:33%;
+  margin-right:30%;
   display:flex;
   height: 50px;
 }
 .menu_projet1{
+  position: relative;
   font-family: roboto-regular, arial, comic;
   font-size:0.8em;
   margin-left:3%;
@@ -347,30 +369,60 @@ textarea{
   background-color:#D1D1D1;
   border-top-left-radius: 5px;
   border-bottom-left-radius:5px;
+  width: 100px;
 }
 .menu_projet1:hover{
   background-color:#499CE2;
   border-bottom:4px solid #356D9C;
+}
+.menu_projet1:hover::after{
+  font-family: fontawesome;
+  font-size: 2em;
+  content: "\f0d7";
+  position: absolute;
+  color:#356D9C;
+  margin-left: -5px;
+  margin-top: -3px;
 }
 .menu_projet2{
   font-family: roboto-regular, arial, comic;
   font-size:0.8em;
   text-align: center;
   background-color:#D1D1D1;
+  width: 100px;
 }
 .menu_projet2:hover{
   background-color:#499CE2;
   border-bottom:4px solid #356D9C;
+}
+.menu_projet2:hover::after{
+  font-family: fontawesome;
+  font-size: 2em;
+  content: "\f0d7";
+  position: absolute;
+  color:#356D9C;
+  margin-left: -5px;
+  margin-top: -3px;
 }
 .menu_projet3{
   font-family: roboto-regular, arial, comic;
   font-size:0.8em;
   text-align: center;
   background-color:#D1D1D1;
+  width: 100px;
 }
 .menu_projet3:hover{
   background-color:#499CE2;
   border-bottom:4px solid #356D9C;
+}
+.menu_projet3:hover::after{
+  font-family: fontawesome;
+  font-size: 2em;
+  content: "\f0d7";
+  position: absolute;
+  color:#356D9C;
+  margin-left: -5px;
+  margin-top: -3px;
 }
 .menu_projet4{
   font-family: roboto-regular, arial, comic;
@@ -380,10 +432,20 @@ textarea{
   background-color:#D1D1D1;
   border-top-right-radius:5px;
   border-bottom-right-radius:5px;
+  width: 100px;
 }
 .menu_projet4:hover{
   background-color:#499CE2;
   border-bottom:4px solid #356D9C;
+}
+.menu_projet4:hover::after{
+  font-family: fontawesome;
+  font-size: 2em;
+  content: "\f0d7";
+  position: absolute;
+  color:#356D9C;
+  margin-left: -5px;
+  margin-top: -3px;
 }
 #projet > div > a > p {
   padding-left:5%;
@@ -411,8 +473,22 @@ textarea{
   position:absolute;
   margin-top:44%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.8;
   width:100%;
+}
+.img_descrip::after{
+  position: absolute;
+  content: "\f06e";
+  color: white;
+  font-size:1em;
+  opacity: 1;
+  font-family:fontawesome;
+  background-color: #499CE2;
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 10px;
+  margin-top: -30%;
+  margin-left: 80%;
 }
 .image:hover > .img_descrip {
     visibility: visible;
@@ -435,4 +511,50 @@ textarea{
 #image > div > img {
   width: 100%;
   height: 100%;
+}
+
+.icon_services{
+  position: relative;
+  margin-right: 5%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid grey;
+  display: inline-block;
+  float: left;
+  font-family: fontawesome;
+}
+.icon_ux::after{
+  position: absolute;
+  content:"\f201";
+  font-size:2em;
+  color:#499CE2;
+  margin-left:25px;
+  margin-top:20px;
+}
+.icon_ui::after{
+  position: absolute;
+  content:"\f1b3";
+  font-size:2em;
+  color:#499CE2;
+  margin-left:22px;
+  margin-top:20px;
+}
+.icon_seo::after{
+  position: absolute;
+  content:"\f200";
+  font-size:2em;
+  color:#499CE2;
+  margin-left:27px;
+  margin-top:22px;
+}
+.icon_services::before{
+  content:'\f111';
+  font-size: 1em;
+  color: #499CE2;
+  border: 1px solid white;
+  background-color: white;
+  position:absolute;
+  margin-left: 72px;
+  margin-top: 30px;
 }
