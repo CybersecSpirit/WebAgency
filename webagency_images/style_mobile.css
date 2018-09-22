@@ -157,10 +157,10 @@
     bottom:0;
   }
 
-  .img_descrip::after{
+  .img_descrip::before{
     padding: 3px;
     font-size:0.8em;
-    top: 90%;
+    top: 10%;
     margin-left: 75%;
     border:1px solid white;
   }
