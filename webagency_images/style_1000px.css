@@ -1,27 +1,203 @@
-@media all and (max-width:1000px)
+@media all and (max-width: 1000px)
 {
+
+  /* HEADER 1000Px */
   #header{
+    display:flex;
+    flex-direction: column;
+
+  }
+  .logo{
+    align-items: center;
+    justify-content: space-around;
+    padding-top:5%;
+    height: 20px;
+    width: auto;
+  }
+  #menu ul {
+    margin-top: 2%;
+    display: flex;
+    padding-left: 0;
+  }
+  #menu li {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 5%;
+  }
+  #menu a {
+    padding-top: 0;
+  }
+  #menu{
+    margin:1% 1% 1% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .bar{
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 30%;
+    margin-right: 30%;
+
+  }
+  .bar::before{
+    margin-left: 42%;
+  }
+
+  /* SLIDER 1000px */
+
+  #slider{
+    display: flex;
+    margin-top: 135px;
+    margin-right: auto;
+  }
+  .presentation{
+    width: 100%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  #fleches .fleche-droite{
+    margin-left: 0;
+    right: 8px;
+  }
+  #fleches {
+    padding-top:12%;
+  }
+
+  .button {
+    height:auto;
+  }
+  .button p{
+    margin: 0;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .button p a {
+    text-align: center;
+  }
+
+  /* SERVICES 1000px */
+  #services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #features{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #features ul {
+    width: 100%;
+    padding: 0;
+  }
+  #features li {
+    width:100%;
+  }
+  .services{
+    width: auto;
+    margin:0;
     display:flex;
     flex-direction:column;
   }
 
-  .menu{
-    margin:1% 1% 1% 1%;
-  }
-  #slider{
-    margin-top: 30%;
-  }
-  .services{
-    display: flex;
-    flex-direction: column;
-  }
-  #formulaire{
-    border:none;
-  }
+  /* PORTFOLIO 1000px */
+
   #projet{
-    margin-left: 30%;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  #projet .menu_projet a p{
+    font-size:1em;
+  }
+  #portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
   }
   #image{
-    margin-left: 10%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
   }
+  #image .image{
+    margin: 0;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    height: auto;
+    margin-bottom: 3%;
+  }
+
+  /* Description Image 1000px */
+
+  .img_descrip{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    height: 40%;
+    width: 100%;
+    bottom:0;
+  }
+
+  .img_descrip::after{
+    padding: 3px;
+    font-size:2em;
+    top: 88%;
+    margin-left: 75%;
+    border:1px solid white;
+  }
+
+  .img_descrip > h5 {
+    height: 30%;
+    margin: 0;
+    padding-top: 5%;
+    font-size: 1.2em;
+    margin-left: 5%;
+    padding-bottom: 2%;
+  }
+  .img_descrip > p {
+    height: 70%;
+    font-size: 1em;
+    margin: 0;
+    margin-left: 5%;
+  }
+
+  /* Formulaire 1000px */
+
+  #formulaire{
+    margin: 0;
+    margin-top:-60%;
+    margin-left: 40%;
+    width: 50%;
+  }
+  iframe {
+    height:500px;
+  }
+
+  #contact .button {
+    padding-left:0;
+    height:auto;
+  }
+  #contact .button p a {
+    padding:0;
+  }
+
 }
