@@ -440,7 +440,8 @@ ul > li > p {
 .img_descrip{
   visibility: hidden;
   position:absolute;
-  margin-top:46%;
+  height: 40%;
+  bottom:0;
   background-color: black;
   opacity: 0.8;
   width:100%;
