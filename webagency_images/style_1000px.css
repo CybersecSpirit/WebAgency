@@ -40,10 +40,11 @@
     justify-content: space-around;
     margin-left: 30%;
     margin-right: 30%;
+    width: 40%;
 
   }
   .bar::before{
-    margin-left: 42%;
+    margin-left: 43%;
   }
 
   /* SLIDER 1000px */
@@ -88,14 +89,14 @@
   /* SERVICES 1000px */
   #services {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
 
   #features{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items: center;
     justify-content: space-around;
   }
@@ -110,7 +111,7 @@
     width: auto;
     margin:0;
     display:flex;
-    flex-direction:column;
+    flex-direction: row;
   }
 
   /* PORTFOLIO 1000px */
@@ -184,19 +185,23 @@
 
   #formulaire{
     margin: 0;
-    margin-top:-60%;
-    margin-left: 40%;
-    width: 50%;
+    height: auto;
+    margin-top:-473px;
+    margin-left: 15%;
+    width: 70%;
+  }
+  #formulaire p {
+    margin-top: -8%;
   }
   iframe {
     height:500px;
   }
 
-  #contact .button {
+  #envoyer {
     padding-left:0;
     height:auto;
   }
-  #contact .button p a {
+  #envoyer {
     padding:0;
   }
 
