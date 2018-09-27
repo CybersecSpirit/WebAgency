@@ -65,6 +65,9 @@
   font-family:roboto-regular,arial,comic;
 }
 
+body {
+  margin:0;
+}
 
 /* HEADER */
 
@@ -74,8 +77,6 @@
   display:flex;
   position: fixed;
   top:0;
-  right: 8px;
-  left:8px;
   width:100%;
   background-color:white;
   justify-content: space-around;
@@ -118,6 +119,11 @@ div.logo{
 #menu a:hover{
     color:#3B3B3B;
     border-top:3px solid #499CE2;
+}
+
+#menu .menu_defaut a {
+    color:#3B3B3B;
+    border-top: 3px solid #499CE2;
 }
 
 
@@ -170,7 +176,7 @@ section header p{
   background-image:url('images/slider/bg1.jpg');
   background-size: cover;
   width:100%;
-  height: 400px;
+  box-sizing: border-box;
 
 }
 
@@ -213,7 +219,7 @@ strong{
 
 }
 #fleches .fleche-droite{
-  right:8px;
+  right:0;
   border-bottom-left-radius: 200px;
   border-top-left-radius: 200px;
 }
@@ -239,6 +245,7 @@ strong{
   margin-left:5%;
   padding-top: 5%;
   position: relative;
+  padding-bottom: 10%;
 }
 .button {
   background-color: #499CE2;
@@ -388,6 +395,17 @@ ul > li > p {
 .menu_projet1{
   border-top-left-radius: 5px;
   border-bottom-left-radius:5px;
+  background-color: #499CE2;
+  border-bottom:4px solid #356D9C;
+}
+.menu_projet1::after {
+  font-family: fontawesome;
+  font-size: 2em;
+  content: "\f0d7";
+  position: absolute;
+  color:#356D9C;
+  margin-left: -5px;
+  margin-top: -7px;
 }
 
 .menu_projet4{
@@ -407,6 +425,10 @@ ul > li > p {
 
   color: white;
   bottom: 0;
+}
+
+#projet .menu_projet1 > a > p {
+  color: white;
 }
 
 /* Images Portfolio */

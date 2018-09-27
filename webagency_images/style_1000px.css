@@ -1,4 +1,4 @@
-@media all and (min-width: 481px) and (max-width: 1000px)
+@media all and (min-width: 481px) and (max-width: 1024px)
 {
 
   /* HEADER 1000Px */
@@ -66,7 +66,7 @@
 
   #fleches .fleche-droite{
     margin-left: 0;
-    right: 8px;
+    right: 0px;
   }
   #fleches {
     padding-top:12%;
@@ -203,6 +203,12 @@
   }
   #envoyer {
     padding:0;
+  }
+
+}
+@media all and (min-width:481px) and (max-width:768px) {
+  #features {
+    display:block;
   }
 
 }
