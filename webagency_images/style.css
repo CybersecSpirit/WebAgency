@@ -129,7 +129,7 @@ div.logo{
 
 /* HEADER SECTION */
 
-section header h2{
+.header_section h2{
   text-align: center;
   font-family:roboto-medium,arial,comic;
   font-size:1.8em;
@@ -137,7 +137,7 @@ section header h2{
   text-transform: uppercase;
 }
 
-section header p{
+.header_section p{
   text-align:center;
   color:black;
   font-size:0.8em;
@@ -186,7 +186,7 @@ h1{
   font-size:1.8em;
   text-transform: uppercase;
 }
-strong{
+span{
   font-family:roboto-black,arial,comic;
   text-transform: uppercase;
   color:#499CE2;
@@ -439,34 +439,34 @@ ul > li > p {
   display:flex;
   flex-wrap: wrap;
 }
-#image > div > img {
+figure > img {
   width: 100%;
   height: 100%;
 }
-.image{
+figure{
   position: relative;
   display: flex;
   flex-wrap:wrap;
-  margin-left: 5%;
+  margin-left: 2%;
   margin-right:2%;
   margin-top:2%;
-  width: 26%;
+  width: 20% ;
   height:auto;
 }
 
 /* Description Images */
 
 
-.img_descrip{
+figcaption{
   visibility: hidden;
   position:absolute;
   height: 40%;
   bottom:0;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.6;
   width:100%;
 }
-.img_descrip::before{
+figcaption::before{
   position: absolute;
   content: "\f06e";
   color: white;
@@ -476,22 +476,21 @@ ul > li > p {
   background-color: #499CE2;
   border: 2px solid white;
   border-radius: 100%;
-  padding: 10px;
-  margin-top: -9%;
+  padding: 2%;
+  margin-top: -4%;
   margin-left: 70%;
 }
-.image:hover > .img_descrip {
+figure:hover > figcaption {
     visibility: visible;
 }
-.img_descrip > h5 {
+figcaption > h5 {
   font-family: roboto-black;
   margin-top: 10px;
   font-size: 0.9em;
   color: white;
   margin-left: 5%;
 }
-.img_descrip > p {
-  margin-top: -8%;
+figcaption > p {
   color: white;
   font-size: 0.8em;
   opacity: 1;

@@ -1,101 +1,192 @@
 <!doctype html>
 <html lang='fr'>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="webagency_images/style.css">
-  <link rel="stylesheet" media="all and (max-width:480px)" href="webagency_images/style_mobile.css">
-  <link rel="stylesheet" media="all and (min-width:481px) and (max-width:1024px)" href="webagency_images/style_1000px.css">
-  <meta name="viewport" content="width=device-width, user-scalable=yes">
-  <title>WebAgency</title>
-</head>
-<body>
-<section id="accueil">
-  <header id='header'>
-      <div class='logo'><img src='webagency_images/images/logo.png' alt='logo'/></div>
-        <nav id='menu'>
-          <ul>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="webagency_images/style.css">
+    <link rel="stylesheet" media="all and (max-width:480px)" href="webagency_images/style_mobile.css">
+    <link rel="stylesheet" media="all and (min-width:481px) and (max-width:1024px)" href="webagency_images/style_1000px.css">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>WebAgency</title>
+    <meta name="description" content="Agence de communication web">
+  </head>
+  <body>
+    <header id='header'>
+      <div class='logo'>
+        <img src='webagency_images/images/logo.png' alt='logo'/>
+      </div>
+      <nav id='menu'>
+        <ul>
           <li class='menu menu_defaut'><a href='#accueil'>Accueil</a></li>
           <li class='menu'><a href='#services'>Services</a></li>
           <li class='menu'><a href='#portfolio'>Portfolio</a></li>
           <li class='menu'><a href='#contact'>Contact</a></li>
         </ul>
       </nav>
-  </header>
-</section>
-  <section id='slider'>
-    <div id="fleches">
-      <div class="fleche fleche-gauche"><p>&lt;</p></div>
-      <div class="fleche fleche-droite"><p>&gt;</p></div>
-    </div>
+    </header>
+
+    <section id='slider'>
+      <div id="fleches">
+        <div class="fleche fleche-gauche"><p>&lt;</p></div>
+        <div class="fleche fleche-droite"><p>&gt;</p></div>
+      </div>
       <div class='presentation'>
-        <h1><strong>WebAgency:</strong> l'agence de tous vos projets!</h1>
+        <h1><span>WebAgency:</span> l'agence de tous vos projets!</h1>
         <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser ! </p>
         <div class="button">
           <p>
             <a href='#'>Plus d'Infos</a>
           </p>
         </div>
-
       </div>
-  </section>
-  <section id='services'>
-    <header>
-    <h2>Nos Services</h2>
+    </section>
+    <section id='services'>
+      <div class="header_section">
+        <h2>Nos Services</h2>
       <div class='bar'></div>
-    <p> La Web Agency propose plusieurs services.</p>
-    </header>
-  <div id="features">
-    <div class="services">
-      <img src="webagency_images/images/main-feature.png" alt='main_feature'/>
-    </div>
-    <div class="services">
-      <ul>
-        <li><div class="icon_services icon_ux"></div><h3>UX Design</h3><p>Mise en place de l'expérience utilisateur</p></li>
-        <li><div class="icon_services icon_ui"></div><h3>UI Design</h3><p>Conception de l'interface client</p></li>
-        <li><div class="icon_services icon_seo"></div><h3>SEO</h3><p>Référencement afin de rendre votre site visible sur le Web</p></li>
-      </ul>
-    </div>
-  </div>
+        <p> La Web Agency propose plusieurs services.</p>
+      </div>
+      <div id="features">
+        <div class="services">
+          <img src="webagency_images/images/main-feature.png" alt='main_feature'/>
+        </div>
+        <div class="services">
+          <ul>
+            <li>
+              <div class="icon_services icon_ux"></div>
+              <h3>UX Design</h3>
+              <p>Mise en place de l'expérience utilisateur</p>
+            </li>
+            <li>
+              <div class="icon_services icon_ui"></div>
+              <h3>UI Design</h3>
+              <p>Conception de l'interface client</p>
+            </li>
+            <li>
+              <div class="icon_services icon_seo"></div>
+              <h3>SEO</h3>
+              <p>Référencement afin de rendre votre site visible sur le Web</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id='portfolio'>
+      <div class="header_section">
+        <h2>Nos Projets</h2>
+        <div class='bar'></div>
+        <p>Fort de son expérience, la Web Agency rendra toujours votre site toujours plus beau.</p>
+      </div>
+      <div id="projet">
+        <div class='menu_projet menu_projet1'>
+          <a href='#image'>
+            <p>Intégralité</p>
+          </a>
+        </div>
+        <div class='menu_projet menu_projet2'>
+          <a href='#portfolio'>
+            <p>Creative</p>
+          </a>
+        </div>
+        <div class='menu_projet menu_projet3'>
+          <a href='#contact'>
+            <p>Corporate</p>
+          </a>
+        </div>
+        <div class='menu_projet menu_projet4'>
+          <a href='#services'>
+            <p>Portfolio</p>
+          </a>
+        </div>
+      </div>
+      <div id='image'>
+        <figure>
+          <img src='webagency_images/images/portfolio/01.jpg' alt='img01'/>
+          <figcaption>
+            <h5>Titre</h5>
+            <p>Description</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src='webagency_images/images/portfolio/02.jpg' alt='img02'/>
+          <figcaption>
+            <h5>Titre</h5>
+            <p>Description</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src='webagency_images/images/portfolio/03.jpg' alt='img03'/>
+          <figcaption>
+            <h5>Titre</h5>
+            <p>Description</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src='webagency_images/images/portfolio/04.jpg' alt='img04'/>
+          <figcaption>
+            <h5>Titre</h5>
+            <p>Description</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src='webagency_images/images/portfolio/05.jpg' alt='img05'/>
+          <figcaption>
+            <h5>Titre</h5>
+            <p>Description</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src='webagency_images/images/portfolio/06.jpg' alt='img06'/>
+          <figcaption>
+            <h5>Titre</h5>
+            <p>Description</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src='webagency_images/images/portfolio/07.jpg' alt='img07'/>
+          <figcaption>
+            <h5>Titre</h5>
+            <p>Description</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src='webagency_images/images/portfolio/08.jpg' alt='img08'/>
+          <figcaption>
+            <h5>Titre</h5>
+            <p>Description</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src='webagency_images/images/portfolio/full.jpg' alt='full'/>
+          <figcaption>
+            <h5>Titre</h5>
+            <p>Description</p>
+          </figcaption>
+        </figure>
+      </div>
 
-  </section>
-  <section id='portfolio'>
-    <header>
-    <h2>Nos Projets</h2>
-      <div class='bar'></div>
-    <p>Fort de son expérience, la Web Agency rendra toujours votre site toujours plus beau.</p>
-    </header>
-    <div id="projet">
-      <div class='menu_projet menu_projet1'><a href='#image'><p>Intégralité</p></a></div>
-      <div class='menu_projet menu_projet2'><a href='#portfolio'><p>Creative</p></a></div>
-      <div class='menu_projet menu_projet3'><a href='#contact'><p>Corporate</p></a></div>
-      <div class='menu_projet menu_projet4'><a href='#services'><p>Portfolio</p></a></div>
-    </div>
-    <div id='image'>
-      <div class='image'><img src='webagency_images/images/portfolio/01.jpg' alt='img01'/><div class="img_descrip"><h5>Titre</h5><p>Description</p></div></div>
-      <div class='image'><img src='webagency_images/images/portfolio/02.jpg' alt='img02'/><div class="img_descrip"><h5>Titre</h5><p>Description</p></div></div>
-      <div class='image'><img src='webagency_images/images/portfolio/03.jpg' alt='img03'/><div class="img_descrip"><h5>Titre</h5><p>Description</p></div></div>
-      <div class='image'><img src='webagency_images/images/portfolio/04.jpg' alt='img04'/><div class="img_descrip"><h5>Titre</h5><p>Description</p></div></div>
-      <div class='image'><img src='webagency_images/images/portfolio/05.jpg' alt='img05'/><div class="img_descrip"><h5>Titre</h5><p>Description</p></div></div>
-      <div class='image'><img src='webagency_images/images/portfolio/06.jpg' alt='img06'/><div class="img_descrip"><h5>Titre</h5><p>Description</p></div></div>
-      <div class='image'><img src='webagency_images/images/portfolio/07.jpg' alt='img07'/><div class="img_descrip"><h5>Titre</h5><p>Description</p></div></div>
-      <div class='image'><img src='webagency_images/images/portfolio/08.jpg' alt='img08'/><div class="img_descrip"><h5>Titre</h5><p>Description</p></div></div>
-      <div class='image'><img src='webagency_images/images/portfolio/full.jpg' alt='full'/><div class="img_descrip"><h5>Titre</h5><p>Description</p></div></div>
-    </div>
+    </section>
+    <section id="contact">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.2611811602414!2d4.86902841570117!3d52.365683979785345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609e0f72c6a57%3A0xba867f66e46faa89!2sJacob+van+Lennepstraat+92%2C+1053+HE+Amsterdam%2C+Pays-Bas!5e0!3m2!1sfr!2sfr!4v1537534829918" allowfullscreen></iframe>
+      <div id="formulaire">
+        <h6>Contact</h6>
+        <p><strong>WebAgency SAS</strong><br>25 Rue d'Hauteville 75010 Paris <br>Tel:01 02 03 04 05</p>
+        <form>
+          <div class='formulaire'>
+            <input type="text" placeholder="Votre Nom" name='pseudo' id='pseudo'>
+          </div>
+          <div class='formulaire'>
+            <input type="email" placeholder="Votre Email" name='email' id='email'>
+          </div>
+          <div class='formulaire'>
+            <input type="text" placeholder="Sujet :" name='sujet' id='sujet'>
+          </div>
+          <div class='formulaire'>
+            <textarea name='message' placeholder="Votre Message" id='message' rows="10"></textarea>
+          </div>
+          <input type="submit" name="Envoyer" id="envoyer" >
+        </form>
+      </div>
+    </section>
 
-  </section>
-  <footer id="contact">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.2611811602414!2d4.86902841570117!3d52.365683979785345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609e0f72c6a57%3A0xba867f66e46faa89!2sJacob+van+Lennepstraat+92%2C+1053+HE+Amsterdam%2C+Pays-Bas!5e0!3m2!1sfr!2sfr!4v1537534829918" allowfullscreen></iframe>
-    <div id="formulaire">
-      <h6>Contact</h6>
-      <p><strong>WebAgency SAS</strong><br>25 Rue d'Hauteville 75010 Paris <br>Tel:01 02 03 04 05</p>
-      <form>
-      <div class='formulaire'><input type="text" placeholder="Votre Nom" name='pseudo' id='pseudo'></div>
-      <div class='formulaire'><input type="email" placeholder="Votre Email" name='email' id='email'></div>
-      <div class='formulaire'><input type="text" placeholder="Sujet :" name='sujet' id='sujet'></div>
-      <div class='formulaire'><textarea name='message' placeholder="Votre Message" id='message' rows="10"></textarea></div>
-      <input type="submit" name="Envoyer" id="envoyer" >
-      </form>
-    </div>
-  </footer>
-</body>
+  </body>
 </html>

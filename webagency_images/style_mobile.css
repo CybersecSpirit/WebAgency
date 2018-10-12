@@ -29,7 +29,7 @@
     padding-top: 0;
   }
   #menu{
-    margin:1% 1% 1% 1%;
+    margin:0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -64,8 +64,7 @@
   }
 
   #fleches .fleche-droite{
-    margin-left: 0;
-    right: 8px;
+    right: 0px;
   }
   #fleches {
     padding-top: 30%;
@@ -137,7 +136,7 @@
     justify-content: space-around;
     margin: 0;
   }
-  #image .image{
+  #image figure{
     margin: 0;
     align-items: center;
     justify-content: space-around;
@@ -148,7 +147,7 @@
 
   /* Description Image Mobile */
 
-  .img_descrip{
+  figcaption{
     display: flex;
     flex-direction:column;
     justify-content: space-around;
@@ -157,7 +156,7 @@
     bottom:0;
   }
 
-  .img_descrip::before{
+  figcaption::before{
     padding: 3px;
     font-size:0.8em;
     top: 10%;
@@ -165,7 +164,7 @@
     border:1px solid white;
   }
 
-  .img_descrip > h5 {
+  figcaption > h5 {
     height: 30%;
     margin: 0;
     padding-top: 5%;
@@ -173,7 +172,7 @@
     margin-left: 5%;
     padding-bottom: 2%;
   }
-  .img_descrip > p {
+  figcaption > p {
     height: 70%;
     font-size: 0.6em;
     margin: 0;
